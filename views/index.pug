@@ -1,0 +1,17 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to our simple app #{title}
+  <br/>
+  <form action="/dashboard" method="post">
+      <label for="team_email">Email: </label>
+      <input id="team_email" type="email" required name="email_field" placeholder="Enter your email address">
+
+      <br/><br/>
+      <label for="team_password">Password: </label>
+      <input id="team_password" type="password" required name="password_field" placeholder="Enter your password">
+
+      <br/><br/>
+      <input type="submit" value="Login">
+  </form>
